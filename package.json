@@ -21,6 +21,9 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "ignorePatterns": [
+      "Z-backup/"
     ]
   },
   "browserslist": {
@@ -36,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "prettier": "^3.3.3",
     "sass": "^1.79.4"
   }
 }
