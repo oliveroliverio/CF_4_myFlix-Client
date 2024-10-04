@@ -86,3 +86,8 @@ $color: steelblue;
   </body>
 </html>
 ```
+
+# Building an app
+Navigate back to your “myFlix-client” folder. Then use the following terminal command:
+
+`parcel [path to index.html]`
