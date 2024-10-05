@@ -3,6 +3,7 @@
 import { createRoot } from 'react-dom/client'
 import { MainView } from './main-view/main-view'
 import { MyComponent } from './main-view/main-view'
+import { UseStateExample1 } from './main-view/main-view'
 
 // Import statement to indicate that you need to bundle `./index.scss`
 import './index.scss'
@@ -13,6 +14,7 @@ const MyFlixApplication = () => {
 		<div className='my-flix'>
 			<MainView />
 			<MyComponent />
+			<UseStateExample1 />
 		</div>
 	)
 }
