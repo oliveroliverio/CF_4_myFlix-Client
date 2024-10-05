@@ -1,3 +1,4 @@
+import { useState } from "react";
 export const MainView = () => {
     return (
         <>
@@ -26,4 +27,33 @@ export const MyComponent = () => {
             <p>{obj.x}</p>
         </div>
     );
+}
+
+export const UseStateExample1 = () => {
+    // booksArray with book titles and ids
+    let booksArray = [
+        { title: "Eloquent JavaScript", id: 1 },
+        { title: "Mastering JavaScript Functional Programming", id: 2 },
+        { title: "JavaScript: The Good Parts", id: 3 },
+        { title: "JavaScript: The Definitive Guide", id: 4 },
+        { title: "The Road to React", id: 5 },
+        { title: "The Road to React", id: 6 }
+    ]
+
+    const [books, setBooks] = useState(booksArray)
+
+    if (books.length === 0) {
+        return <div>List empty...</div>
+    }
+
+    return (
+        <>
+            <h1>----------------Books--------------------</h1>
+            <div>
+                {books.map(book => {
+                    return <div>{book.title}</div>
+                })}
+            </div>
+        </>
+    )
 }
