@@ -1,6 +1,7 @@
 export const MainView = () => {
     return (
         <>
+            <h1>---------------title---------------</h1>
             <div>Eloquent JavaScript</div>
             <div>Mastering JavaScript Functional Programming</div>
             <div>JavaScript: The Good Parts</div>
@@ -18,6 +19,7 @@ export const MyComponent = () => {
     let obj = { x: 32, y: 64 };
     return (
         <div>
+            <h1>-------------My Component----------------</h1>
             <p>Hello {name}!</p>
             <p>{5 + num}</p>
             <p>{Math.random()}</p>
