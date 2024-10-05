@@ -58,7 +58,7 @@ export const UseStateExample1 = () => {
             <h1>----------------Books--------------------</h1>
             <div>
                 {books.map(book => {
-                    return <div>{book.title}</div>
+                    return <div key={book.id}>{book.title}</div>
                 })}
             </div>
         </>
