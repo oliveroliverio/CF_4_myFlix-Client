@@ -30,7 +30,7 @@ export const MyComponent = () => {
 }
 
 export const UseStateExample1 = () => {
-    // booksArray with book titles and ids
+    // booksArray with book titles and ids.  This is the initial state
     let booksArray = [
         {
             id: 1,
