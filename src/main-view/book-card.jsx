@@ -1,17 +1,19 @@
+import React from 'react';
 import Image from 'next/image'
 
 export default function BookCard({ title, author, imageUrl }) {
     return (
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-            <div className="relative h-48 w-full">
+            {/* <div className="relative h-48 w-full">
                 <Image
-                    src={imageUrl || "/placeholder.svg?height=400&width=600"}
-                    alt={title || "Card image"}
+                    src={imageUrl}
+                    alt={title}
                     layout="fill"
                     objectFit="cover"
                     className="transition-transform duration-300 hover:scale-105"
                 />
-            </div>
+                asdf
+            </div> */}
             <div className="px-6 py-4">
                 <h2 className="font-bold text-xl mb-2 text-gray-800">{title || "Exploring the Future"}</h2>
                 <p className="text-gray-600 text-sm">

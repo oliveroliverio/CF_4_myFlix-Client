@@ -1,16 +1,19 @@
+import React from 'react';
 import { useState } from "react";
 import BookCard from "./book-card";
 export const MainView = () => {
     return (
         <>
-            <h1>---------------title---------------</h1>
-            <div>Eloquent JavaScript</div>
-            <div>Mastering JavaScript Functional Programming</div>
-            <div>JavaScript: The Good Parts</div>
-            <div>JavaScript: The Definitive Guide</div>
-            <div>The Road to React</div>
-            <div>The Road to React</div>
-            <button>Test button</button>
+            {/* <UseStateExample1 /> */}
+            {/* tailwind test */}
+            <div className="bg-gray-200 p-4">
+                <div className="bg-white p-4 rounded-lg shadow-lg">
+                    <h1 className="text-2xl font-bold text-gray-800">Hello, world!</h1>
+                    <p className="text-gray-600 mt-2">
+                        This is a Tailwind CSS test.
+                    </p>
+                </div>
+            </div>
         </>
     )
 }
@@ -72,22 +75,23 @@ export const UseStateExample1 = () => {
 
     const [books, setBooks] = useState(booksArray)
 
-    if (books.length === 0) {
-        return <div>List empty...</div>
-    }
-
     return (
         <>
-            <h1>----------------Books--------------------</h1>
+
             <div>
-                {books.map(book => {
-                    return (
-                        <>
-                        <BookCard ></BookCard>
-                        </>
-                    )
-                })}
+                {books.map(book =>
+
+                    <BookCard key={book.id}
+                        id={book.id}
+                        title={book.title}
+                        imageUrl={book.image}
+                        author={book.author}>
+                    </BookCard>
+
+                )}
             </div>
         </>
     )
 }
+
+// BookCard component is being used here.  How do I add props, id, title, image, and author?
